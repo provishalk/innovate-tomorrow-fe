@@ -1,5 +1,5 @@
 import React from "react";
-
+import axios from "axios"
 const TimePage = ({ currentDateTime }) => {
   return (
     <div className="flex items-center justify-center h-screen">
@@ -10,13 +10,14 @@ const TimePage = ({ currentDateTime }) => {
 
 export default TimePage;
 
-export const getStaticProps = async (props) => {
+export const getStaticProps = async () => {
   // Use remark to convert markdown into HTML string
-  const currentDateTime = new Date().toLocaleString();
-
+  const { data } = await axios.get(
+    `https://eou7b4yf6sugg59.m.pipedream.net/?slug=timing`
+  );
   return {
     props: {
-      currentDateTime,
+      currentDateTime: data.date,
     },
   };
 };
