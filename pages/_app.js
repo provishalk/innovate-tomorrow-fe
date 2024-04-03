@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }) {
           "https://cdn.convrrt.com/libs/popup/widget.js");
           _cvt("init", {
             orgID: 'mailmodo',
-            projectID: "0004ede9-b0b1-55d5-b0b2-819243f1c0ea_f5ad2069-61cf-4503-8b70-7e7b6eae5812",
-            popupID: "a75a0fac-5086-4430-8d18-44924a215a73"
+            projectID: "454c576f-a04e-58de-9398-73752ddaf021_52cd5ece-4705-465a-8e1f-666f1832eb45",
+            popupID: "dc2134ed-9e50-4f3a-8129-f5102074bd5c"
           });`}}>
         {}
       </script>
